@@ -2,7 +2,7 @@
   "name": "dogs",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://sportschord.github.io/dogs/",
+  "homepage": "https://sportschord.github.io/dogs/",
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
