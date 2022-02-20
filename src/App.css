@@ -19,7 +19,7 @@
 }
 
 .filters {
-  margin: 20px 80px 10px 80px;
+  margin: 10px 80px 20px 80px;
 }
 .largeImage {
   height: 200px;
@@ -120,7 +120,7 @@
 
 .traits {
     display: grid;
-    gap: 25px;
+    gap: 15px;
     grid-template-columns: 1fr 1fr 1fr;
     font-size: 0.8em;
     text-align: left;
