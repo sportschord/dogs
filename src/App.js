@@ -152,8 +152,8 @@ function App() {
                         {/* <p>{d[f]}</p> */}
                         {descs.filter(i => i.Trait === f).map(h =>
                           <div className='boundaries' ref={ref}>
-                            <p style={{ fontSize: '0.6em' }}>{h['Trait_1']}</p>
-                            <p style={{ fontSize: '0.6em' }}>{h['Trait_5']}</p>
+                            <p style={{ fontSize: '0.7em' }}>{h['Trait_1']}</p>
+                            <p style={{ fontSize: '0.7em' }}>{h['Trait_5']}</p>
                           </div>
 
                         )}
