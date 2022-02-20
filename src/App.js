@@ -1,5 +1,6 @@
 import './App.css';
 import * as d3 from "d3";
+import { useSpring, animated } from 'react-spring'
 import React, { useEffect, useRef, useState } from 'react';
 import ranks from './ranks.csv'
 import traitdata from './traits.csv'
@@ -25,6 +26,15 @@ function App() {
   const [traitLabs, setTraitLabs] = useState(['Energy Level']);
   const [loading, setLoading] = useState(true);
 
+  const style = useSpring({
+    config: {
+      duration: 1200,
+    },
+    opacity: 0.5,
+    // fill:  ? 'aliceblue' : 'black'
+
+  });
+
 
   const dogData = data?.filter(d => d.Breed === dog)
   const dogTraits = traits?.filter(d => d.Breed === dog)
@@ -34,7 +44,7 @@ function App() {
   useEffect(() => {
     setWindowWidth(ref.current ? ref.current.offsetWidth : 0)
     console.log(windowWidth);
-  }, [ref.current]);
+  }, [ref.current,windowWidth]);
 
   useEffect(() => {
 
@@ -137,7 +147,8 @@ function App() {
                         </div>
                         <svg width={width / 3} height={20}>
                           {circles.map(g =>
-                            <rect
+                            <animated.rect
+                              {...style}
                               x={(g - 1) * (barwidth / 5)}
                               y={12}
                               width={(barwidth / 5) - 3}
