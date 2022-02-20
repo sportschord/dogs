@@ -1,38 +1,160 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  font-family: "Lato";
+  margin: 0px;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  height: 10vh;
+  display: grid;
+  grid-template-columns: 80% 20%;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  color: rgb(0, 0, 0);
+  transition: all 0.3s ease-out;
+  border-bottom: #011e53;
+  border-bottom-style: solid;
+  box-shadow: 0 4px 8px 0 rgba(54, 54, 54, 0.2);
+}
+
+.filters {
+  margin: 20px 80px 10px 80px;
+}
+.largeImage {
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  display:flex;
+  margin-bottom: 30px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 40% auto 58%;
+  width: 100%;
+  height: 85vh;
+}
+
+.ranks {
+  margin: 20px;
+  margin-bottom: 5px;
+  min-width: 400px;
+  overflow: scroll;
+
+}
+
+.card {
+  display: flex;
+  background-color:rgba(0,53,148,.5);
+  border: rgba(1, 43, 121, 0.5);
+  border-style: solid;
+  box-shadow: 0 2px 8px 0 rgba(54, 54, 54, 0.2);
+  transition: 0.3s;
+  border-radius: 10px; /* 5px rounded corners */
+  height: 60px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  border-color: rgb(6, 0, 58);
+  border-style: solid;
+  cursor: pointer;
+  /* border-width: 2px; */
+  background-color:rgba(0, 52, 148, 0.644);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+  /* padding-left: 20px; */
+  width: 100%;
+  display: grid;
+  grid-template-columns: 10% 50% 20% 20%;
+  align-items: center;
+  margin: 0px;
+  font-size: medium;
+
 }
+
+.imgWrap {
+  border-radius: 8px 0px 0px 8px;
+  min-width: 60px;
+  width: 15%;
+  background-color: white;
+}
+
+.radar {
+  border-style: solid;
+  border-radius: 10px;
+  border-color: #011e53;
+  background-image: linear-gradient(180deg,#0065c6,#003594);
+  margin: 20px;
+  color: white;
+  min-height: 50vh; 
+  padding: 15px;
+}
+
+.radarHeader {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 20px;
+}
+
+.yearRanks {
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+
+}
+
+.boundaries {
+    display: flex;
+    justify-content: space-between;
+    color: #a4b8df;
+}
+
+.traitHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.traits {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 0.8em;
+    text-align: left;
+
+}
+
+.footer {
+  border-bottom: #011e53;
+  border-bottom-style: solid;
+  height: 5vh;
+  background-color: #011e53;
+  color: white;
+  margin: 0px;
+  text-align: right;
+}
+
+img {
+  border-radius: 8px 0px 0px 8px;
+  width: 60px;
+}
+
+h2 {
+  margin: 20px;
+  font-size: 1.2em;
+  text-align: left;
+}
+
+h3 {
+  margin: 0px;
+  font-size: 1.2em;
+  text-align: left;
+}
+
+p {
+  margin: 0px;
+}
+
